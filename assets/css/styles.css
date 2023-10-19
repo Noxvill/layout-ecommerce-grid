@@ -7,23 +7,25 @@
 
 .main-contenedor {
   display: grid;
-  background-color: rgb(120, 15, 15);
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 20% 206% 15%;
   grid-template-areas: "navbar navbar" "sidebar products" "footer footer";
 }
 .main-contenedor navbar {
-  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(37, 82, 123);
   grid-area: navbar;
   font-family: Ubuntu, regular;
+  color: aliceblue;
 }
 .main-contenedor sidebar {
-  height: 100px;
-  background-color: rgb(231, 231, 231);
+  background-color: 0;
   grid-area: sidebar;
 }
 .main-contenedor products {
-  height: 100px;
-  background-color: rgb(231, 231, 231);
+  background-color: black;
   grid-area: products;
 }
 .main-contenedor products img {
@@ -31,7 +33,6 @@
   height: 200px;
 }
 .main-contenedor footer {
-  height: 50px;
   background-color: rgb(37, 82, 123);
   grid-area: footer;
 }/*# sourceMappingURL=styles.css.map */
