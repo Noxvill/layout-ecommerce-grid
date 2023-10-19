@@ -1,0 +1,65 @@
+*{
+
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+// .gridcontenedorin{
+
+//     background-color: pink;
+//     border: 1px solid white;
+
+//  img{
+
+// height: 100%;
+// width:100%;
+// }}
+
+.main-contenedor{
+    // color: wheat;
+    display: grid;
+    background-color: rgb(120, 15, 15);
+    grid-template-areas:
+     'navbar navbar'
+     'sidebar products' 
+     'footer footer';
+
+    navbar{
+        // display: flex;
+        // justify-content:;
+        height: 60px;
+        background-color: rgba(37,82,123,255);
+        grid-area: navbar;
+        font-family: Ubuntu, regular;
+    }
+
+    sidebar{
+        height: 100px;
+        background-color: rgba(231,231,231,255);
+        grid-area: sidebar;
+    }
+
+    products{
+
+        height: 100px;
+        background-color: rgba(231,231,231,255);
+        grid-area: products;
+
+img{
+
+    width: 200px;
+    height: 200px;
+}
+
+    }
+
+     footer{
+
+        height: 50px;
+        background-color: rgba(37,82,123,255);
+        grid-area: footer;
+    }
+}

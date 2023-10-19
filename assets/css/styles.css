@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-contenedor {
+  display: grid;
+  background-color: rgb(120, 15, 15);
+  grid-template-areas: "navbar navbar" "sidebar products" "footer footer";
+}
+.main-contenedor navbar {
+  height: 60px;
+  background-color: rgb(37, 82, 123);
+  grid-area: navbar;
+  font-family: Ubuntu, regular;
+}
+.main-contenedor sidebar {
+  height: 100px;
+  background-color: rgb(231, 231, 231);
+  grid-area: sidebar;
+}
+.main-contenedor products {
+  height: 100px;
+  background-color: rgb(231, 231, 231);
+  grid-area: products;
+}
+.main-contenedor products img {
+  width: 200px;
+  height: 200px;
+}
+.main-contenedor footer {
+  height: 50px;
+  background-color: rgb(37, 82, 123);
+  grid-area: footer;
+}/*# sourceMappingURL=styles.css.map */
