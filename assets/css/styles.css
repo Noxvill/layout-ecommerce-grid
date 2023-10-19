@@ -21,11 +21,15 @@
   color: aliceblue;
 }
 .main-contenedor sidebar {
-  background-color: 0;
+  margin: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
   grid-area: sidebar;
 }
 .main-contenedor products {
-  background-color: black;
+  background-color: rgb(231, 231, 231);
   grid-area: products;
 }
 .main-contenedor products img {
@@ -33,6 +37,9 @@
   height: 200px;
 }
 .main-contenedor footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(37, 82, 123);
   grid-area: footer;
 }/*# sourceMappingURL=styles.css.map */

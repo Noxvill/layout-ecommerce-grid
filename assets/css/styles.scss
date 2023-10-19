@@ -43,18 +43,25 @@ padding: 0;
     }
 
     sidebar{
-        // height: 610px;
-        
         // background-color: rgba(231,231,231,255);
-        background-color: red($color: #000000);
+        margin: 20px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: left;
+        // height: 610px;
         grid-area: sidebar;
+
+        
     }
+
+   
 
     products{
 
         // height: 100px;
-        // background-color: rgba(231,231,231,255);
-        background-color: black;
+        background-color: rgba(231,231,231,255);
+        
         grid-area: products;
 
 img{
@@ -66,7 +73,9 @@ img{
     }
 
      footer{
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
         // height: 50px;
         background-color: rgba(37,82,123,255);
         grid-area: footer;
