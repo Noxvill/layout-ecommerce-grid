@@ -8,7 +8,9 @@
 .main-contenedor {
   display: grid;
   grid-template-columns: 1fr 8fr;
-  grid-template-rows: 20% 206% 15%;
+  grid-template-rows: auto auto auto;
+  height: 100vh;
+  background-color: rgb(231, 231, 231);
   grid-template-areas: "navbar navbar" "sidebar products" "footer footer";
 }
 .main-contenedor navbar {
@@ -21,20 +23,54 @@
   color: aliceblue;
 }
 .main-contenedor sidebar {
+  background-color: rgb(231, 231, 231);
   margin: 20px 0 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   text-align: left;
   grid-area: sidebar;
+  height: 100vh;
+}
+.main-contenedor sidebar .titulo {
+  font-size: 20px;
 }
 .main-contenedor products {
-  background-color: rgb(231, 231, 231);
+  display: grid;
   grid-area: products;
+  height: 100vh;
 }
-.main-contenedor products img {
-  width: 200px;
+.main-contenedor products .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.main-contenedor products .grid-item img {
   height: 200px;
+  width: 180px;
+}
+.main-contenedor .grid-item {
+  background-color: rgb(255, 255, 255);
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 200px;
+}
+.main-contenedor .btncomprar {
+  margin: 8% 0 0 0;
+  font-family: Ubuntu, regular;
+  background-color: rgb(37, 82, 123);
+  color: rgb(255, 255, 255);
+}
+.main-contenedor .nombre {
+  margin: 20px 0 0 0;
+}
+.main-contenedor .precio {
+  margin: 10px 0 0 0;
 }
 .main-contenedor footer {
   display: flex;
@@ -42,4 +78,5 @@
   justify-content: center;
   background-color: rgb(37, 82, 123);
   grid-area: footer;
+  height: 10px;
 }/*# sourceMappingURL=styles.css.map */
