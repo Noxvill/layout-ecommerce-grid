@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: auto auto auto;
-  height: 100vh;
   background-color: rgb(231, 231, 231);
   grid-template-areas: "navbar navbar" "sidebar products" "footer footer";
 }
@@ -17,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 60px;
   background-color: rgb(37, 82, 123);
   grid-area: navbar;
   font-family: Ubuntu, regular;
@@ -38,7 +38,7 @@
 .main-contenedor products {
   display: grid;
   grid-area: products;
-  height: 100vh;
+  height: 100px;
 }
 .main-contenedor products .grid-container {
   display: grid;
@@ -76,7 +76,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
   background-color: rgb(37, 82, 123);
   grid-area: footer;
-  height: 10px;
+  font-family: Ubuntu, regular;
+  color: aliceblue;
 }/*# sourceMappingURL=styles.css.map */
